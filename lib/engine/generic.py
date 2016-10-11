@@ -31,9 +31,9 @@ class GenericEngine:
                 saver = SaverFactory.get_saver(SaverFactory.ARTICLE)
                 saver.save(article)
             except ParseError as ex:
-                print(fmtstr("[GenericEngine][error] %s" % ex.encode("utf-8"),"red"))
+                print(fmtstr("[GenericEngine][error] %s" % ex,"red"))
             except ValidationError as ex:
-                print(fmtstr("[GenericEngine][error] %s" % ex.encode("utf-8"),"red"))
+                print(fmtstr("[GenericEngine][error] %s" % ex,"red"))
 
                 parser   = ParserFactory.get_parser(ParserFactory.ARTICLE)
                 document = parser.parse_to_failed(article, reason="%s" % ex)

@@ -14,7 +14,7 @@ class ArticleParser:
 
         article.download()
         if not article.html:
-            raise ParseError("Cannot get HTML from: %s" % article.url)
+            raise ParseError("Cannot get HTML from: %s" % article.url.encode("utf-8"))
         article.parse()
         document = {
                      "title" : article.title,

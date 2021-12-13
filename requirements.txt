@@ -14,7 +14,7 @@ futures==3.0.5
 html5lib==0.999
 idna==2.1
 jieba3k==0.35.1
-lxml==3.6.4
+lxml==4.6.5
 newspaper3k==0.1.7
 nltk==3.2.1
 pymongo==3.3.0
